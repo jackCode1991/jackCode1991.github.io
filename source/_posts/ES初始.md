@@ -29,7 +29,7 @@ http.cors.allow-origin: "*"
 
 4. 重启es
 
-![image-20200809133903553](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809133903553.png)
+![image](/assets/cover/elsticSearch-1.png)
 
 初学可以当作一个数据库！(可以建立索引(库))
 
