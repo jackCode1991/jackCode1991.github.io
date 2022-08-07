@@ -39,11 +39,11 @@ http.cors.allow-origin: "*"
 
 2.汉化
 
-![image-20200809140933690](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809140933690.png)
+![image](/assets/cover/elsticSearch-2.png)
 
 ik分词
 
-![image-20200809162129276](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809162129276.png)
+![image](/assets/cover/elsticSearch-3.png)
 
 > 安装
 
@@ -51,11 +51,11 @@ ik分词
 
 2.放入到elasticsearch插件即可
 
-![image-20200809162549068](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809162549068.png)
+![image](/assets/cover/elsticSearch-4.png)
 
 3.重启观察ES，可以看到分词器被加载
 
-![image-20200809162812048](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809162812048.png)
+![image](/assets/cover/elsticSearch-4.png)
 
 4.elasticsearch-plugin可以通过这个命令来查看加载进来的插件
 
