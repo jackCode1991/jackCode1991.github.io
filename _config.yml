@@ -125,3 +125,12 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+# 懒加载需要配置在外层的配置文件(此处)	  
+lazyload:
+  enable: true
+  #field: site # site/post
+  field: post
+  placeholder:
+  blur: false
+  loadingImg: /assets/cover/loading.gif
+  
