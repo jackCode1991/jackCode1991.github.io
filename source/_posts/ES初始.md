@@ -55,11 +55,11 @@ ik分词
 
 3.重启观察ES，可以看到分词器被加载
 
-![image](/assets/cover/elsticSearch-4.png)
+![image](/assets/cover/elsticSearch-5.png)
 
 4.elasticsearch-plugin可以通过这个命令来查看加载进来的插件
 
-![image-20200809162956326](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809162956326.png)
+![image](/assets/cover/elsticSearch-6.png)
 
 5.使用kibana测试！
 
@@ -67,19 +67,19 @@ ik分词
 
 其中ik_smart为最少切分
 
-![image-20200809164139183](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809164139183.png)
+![image](/assets/cover/elsticSearch-7.png)
 
 ik_max_word最细力度切分
 
-![image-20200809164225015](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809164225015.png)
+![image](/assets/cover/elsticSearch-8.png)
 
 > 如何配置自己的字典
 
-![image-20200809164627834](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809164627834.png)
+![image](/assets/cover/elsticSearch-9.png)
 
 ##### Rest风格说明
 
-![image-20200809165139001](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809165139001.png)
+![image](/assets/cover/elsticSearch-10.png)
 
 > 基础测试
 
@@ -90,31 +90,31 @@ PUT /索引名/~类型名~/文档id
 {请求体}
 ```
 
-![image-20200809165940692](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809165940692.png)
+![image](/assets/cover/elsticSearch-11.png)
 
-2、字段类型![image-20200809170407975](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809170407975.png)
+2、字段类型![image](/assets/cover/elsticSearch-12.png)
 
 3.指定字段的类型
 
-![image-20200809170629746](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809170629746.png)
+![image](/assets/cover/elsticSearch-13.png)
 
 4.获取具体的规则信息
 
-![image-20200809170719135](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809170719135.png)
+![image](/assets/cover/elsticSearch-14.png)
 
 5.查看默认的类型
 
-![image-20200809171441957](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809171441957.png)
+![image](/assets/cover/elsticSearch-15.png)
 
 如果自己的文档字段没有指定，那么es就会给我们默认指定！
 
 扩展：通过命令elasticsearch索引情况！
 
-![image-20200809171832400](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809171832400.png)
+![image](/assets/cover/elsticSearch-16.png)
 
 > 修改索引
 
-![image-20200809172157102](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809172157102.png)
+![image](/assets/cover/elsticSearch-17.png)
 
 > 删除
 
@@ -136,19 +136,19 @@ PUT /kuangshen/user/1
 }
 ```
 
-![image-20200809173824338](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809173824338.png)
+![image](/assets/cover/elsticSearch-18.png)
 
 2.获取数据
 
-![image-20200809174140967](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809174140967.png)
+![image](/assets/cover/elsticSearch-19.png)
 
 3、更新数据 PUT（这样更新必须把所有字段列出，否则变空）
 
-![image-20200809174329890](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809174329890.png)
+![image](/assets/cover/elsticSearch-20.png)
 
 4、Post    _update,推荐使用这种方式
 
-![image-20200809175057819](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809175057819.png)
+![image](/assets/cover/elsticSearch-21.png)
 
 **简单搜索**
 
@@ -158,19 +158,19 @@ GET kuangshen/user/1
 
 简单的条件查询
 
-![image-20200809175916035](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809175916035.png)
+![image](/assets/cover/elsticSearch-22.png)
 
 > 复杂操作 select(排序、分页、高亮、模糊查询)
 
-![image-20200809180658461](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809180658461.png)
+![image](/assets/cover/elsticSearch-23.png)
 
 输出结果，不想要那么多！
 
-![image-20200809180857576](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809180857576.png)
+![image](/assets/cover/elsticSearch-24.png)
 
 > 排序！
 
-![image-20200809181353507](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809181353507.png)
+![image](/assets/cover/elsticSearch-25.png)
 
 > 分页
 
@@ -196,7 +196,7 @@ GET kuangshen/user/_search
 
 > 布尔值查询
 
-![image-20200809181913911](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809181913911.png)
+![image](/assets/cover/elsticSearch-26.png)
 
 ```java
 GET kuangshen/user/_search
@@ -249,11 +249,11 @@ GET kuangshen/user/_search
 }
 ```
 
-![image-20200809182842563](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809182842563.png)
+![image](/assets/cover/elsticSearch-27.png)
 
 > 匹配多个条件！
 
-![image-20200809183429618](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809183429618.png)
+![image](/assets/cover/elsticSearch-28.png)
 
 > 精确查询
 
@@ -267,15 +267,15 @@ term查询是直接通过倒排索引指定的词条进行精确的查找
 
 两个类型
 
-![image-20200809184241553](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809184241553.png)
+![image](/assets/cover/elsticSearch-29.png)
 
-![image-20200809184254355](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809184254355.png)
+![image](/assets/cover/elsticSearch-30.png)
 
-![image-20200809184456749](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809184456749.png)
+![image](/assets/cover/elsticSearch-31.png)
 
 > 精确查询多个值
 
-![image-20200809184658915](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809184658915.png)
+![image](/assets/cover/elsticSearch-32.png)
 
 > 高亮查询！
 
@@ -297,7 +297,7 @@ GET kuangshen/user/_search
 }
 ```
 
-![image-20200809185422166](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200809185422166.png)
+![image](/assets/cover/elsticSearch-33.png)
 
 ##### 集成springboot
 
